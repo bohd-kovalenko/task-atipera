@@ -17,7 +17,8 @@ Response
     Content-Type: application/json
 
 JSON Response Format example:
-[
+    
+    [
     {
         "repositoryName": "AccountantApplication",
         "ownerUsername": "bohd-kovalenko",
@@ -38,12 +39,14 @@ JSON Response Format example:
             }
         ]
     }
-]
+    ]
+    
   On error (wrong username):
-{
+    
+    {
     "status": 404,
     "message": "No such user registered on GitHub"
-}
+    }
 
 Running the API:
   You need Java 17 to be installed
