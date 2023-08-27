@@ -20,7 +20,7 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/{username}/repositories")
+    @GetMapping(value = "/{username}/repositories", produces = "application/json")
     public ResponseEntity<List<GitHubRepository>> extractAllUsersRepositories(@PathVariable("username") String username) {
         log.info("GET method on /github/users/{username}/repositories");
         List<GitHubRepository> responseBody = userService.extractAllRepositoriesByUsername(username);
