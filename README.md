@@ -48,5 +48,6 @@ JSON Response Format example:
     "message": "No such user registered on GitHub"
     }
 
-Running the API:
+### Running the API:
   You need Java 17 to be installed
+    Clone(git clone https://github.com/bohd-kovalenko/task-atipera) or download GitHub repository and then simply run the executable task-atipera-0.0.1-SNAPSHOT.jar 
